@@ -16,6 +16,11 @@
   height: auto;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tracker {
   /* visibility: hidden; */
   position: fixed;
@@ -374,7 +379,7 @@ h3 {
   font-size: 1.25rem;
   position: absolute;
   right: 38px;
-  top: 35px;
+  top: 35px; /*25px*/------------------->
 }
 
 .card li a {
