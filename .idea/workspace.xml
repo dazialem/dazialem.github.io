@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc6f9f5e-cfc2-487e-9d0b-f935d7b5cd72" name="Default Changelist" comment="New Job: UBS" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2ExI9OujinSo8GM3guq1kdM7mDy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dazialem" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc6f9f5e-cfc2-487e-9d0b-f935d7b5cd72" name="Default Changelist" comment="" />
+      <created>1663530656794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663530656794</updated>
+    </task>
+    <task id="LOCAL-00001" summary="1st commit">
+      <created>1663530841285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663530841285</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2nd commit">
+      <created>1663535390400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663535390400</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3rd commit">
+      <created>1663536276211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663536276211</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4rd commit">
+      <created>1663536305536</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663536305536</updated>
+    </task>
+    <task id="LOCAL-00005" summary="4th commit">
+      <created>1663537630033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663537630033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="5th commit">
+      <created>1663538939256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663538939256</updated>
+    </task>
+    <task id="LOCAL-00007" summary="6th commit">
+      <created>1663540993610</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663540993610</updated>
+    </task>
+    <task id="LOCAL-00008" summary="7th commit">
+      <created>1663541527536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663541527536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="8th commit">
+      <created>1663541684692</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663541684692</updated>
+    </task>
+    <task id="LOCAL-00010" summary="9th commit">
+      <created>1663573873622</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663573873622</updated>
+    </task>
+    <task id="LOCAL-00011" summary="10th commit">
+      <created>1663574211285</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663574211285</updated>
+    </task>
+    <task id="LOCAL-00012" summary="11th commit">
+      <created>1663575550150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663575550150</updated>
+    </task>
+    <task id="LOCAL-00013" summary="12th commit">
+      <created>1663594846524</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663594846524</updated>
+    </task>
+    <task id="LOCAL-00014" summary="13th commit">
+      <created>1663598903772</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663598903772</updated>
+    </task>
+    <task id="LOCAL-00015" summary="typo: Gdansk">
+      <created>1663612023961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663612023961</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New Job: UBS">
+      <created>1680722234500</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680722234500</updated>
+    </task>
+    <task id="LOCAL-00017" summary="UBS typo">
+      <created>1680722691528</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680722691528</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st commit" />
+    <MESSAGE value="2nd commit" />
+    <MESSAGE value="3rd commit" />
+    <MESSAGE value="4rd commit" />
+    <MESSAGE value="4th commit" />
+    <MESSAGE value="5th commit" />
+    <MESSAGE value="6th commit" />
+    <MESSAGE value="7th commit" />
+    <MESSAGE value="8th commit" />
+    <MESSAGE value="9th commit" />
+    <MESSAGE value="10th commit" />
+    <MESSAGE value="11th commit" />
+    <MESSAGE value="12th commit" />
+    <MESSAGE value="13th commit" />
+    <MESSAGE value="typo: Gdansk" />
+    <MESSAGE value="New Job: UBS" />
+    <MESSAGE value="UBS typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="UBS typo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="531" y="231" key="FileChooserDialogImpl" timestamp="1680869346733">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="531" y="231" key="FileChooserDialogImpl/0.0.1500.952@0.0.1500.952" timestamp="1680869346733" />
+    <state x="343" y="209" key="Vcs.Push.Dialog.v2" timestamp="1680722702237">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="343" y="209" key="Vcs.Push.Dialog.v2/0.0.1500.952@0.0.1500.952" timestamp="1680722702237" />
+    <state x="454" y="265" key="git4idea.merge.GitPullDialog" timestamp="1680722687482">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="454" y="265" key="git4idea.merge.GitPullDialog/0.0.1500.952@0.0.1500.952" timestamp="1680722687482" />
+  </component>
+</project>
