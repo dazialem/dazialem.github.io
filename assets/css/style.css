@@ -87,7 +87,6 @@
   padding: 11px 35px;
   background: white;
   color: #00796b;
-  border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -99,7 +98,6 @@
 .readme:hover{
   color: white;
   background-color: #00796b;
-  border: 2px solid #00796b;
 }
 
 .contactme {
@@ -107,7 +105,6 @@
   padding: 11px 35px;
   background: white;
   color: #00796b;
-  border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -120,7 +117,6 @@
 .contactme:hover{
   color: white;
   background-color: #00796b;
-  border: 2px solid #00796b;
 }
 /* main body */
 
@@ -695,4 +691,103 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+/* Dark theme overrides */
+body.dark-theme {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+/* Side Bar & Header*/
+body.dark-theme .side-nav li.bold a[href="#about"] > span,
+body.dark-theme #slide-out li.bold a[href="#about"] > span,
+body.dark-theme .side-nav li.bold a[href="#experience"] > span,
+body.dark-theme #slide-out li.bold a[href="#experience"] > span,
+body.dark-theme .side-nav li.bold a[href="#projects"] > span,
+body.dark-theme #slide-out li.bold a[href="#projects"] > span,
+body.dark-theme .side-nav li.bold a[href="#skills"] > span,
+body.dark-theme #slide-out li.bold a[href="#skills"] > span,
+body.dark-theme .side-nav li.bold a[href="#education"] > span,
+body.dark-theme #slide-out li.bold a[href="#education"] > span,
+body.dark-theme .side-nav li.bold a[href="#contact"] > span,
+body.dark-theme #slide-out li.bold a[href="#contact"] > span,
+body.dark-theme .side-nav li.bold a[id="theme-toggle"] > span,
+body.dark-theme #slide-out li.bold a[id="theme-toggle"] > span {
+  color: #008080  !important;
+}
+body.dark-theme .side-nav.fixed li.logo,
+body.dark-theme .side-nav.fixed li.logo > a#logo-container,
+body.dark-theme .side-nav,
+body.dark-theme nav.hide-on-large.only.trigger{
+  background-color: #263238 !important;
+}
+body.dark-theme nav.hide-on-large.only.trigger .name-title span.black-text {
+  color: #e0e0e0 !important;
+}
+body.dark-theme .readme, 
+body.dark-theme .contactme {
+  background: #008080 !important;
+  color: #e0e0e0 !important;
+}
+body.dark-theme .readme:hover,
+body.dark-theme .contactme:hover {
+  background: #263238 !important; 
+  color: #80cbc4 !important; 
+}
+body.dark-theme .caption h2,
+body.dark-theme .caption h5 {
+  color: #263238 !important;
+  text-shadow: none !important;
+}
+body.dark-theme .caption h2 span.teal {
+color: #e0e0e0 !important;
+}
+/* Main content */
+/* Experience */
+body.dark-theme #experience .card {
+  background-color: #263238 !important;
+  color: #e0e0e0 !important; 
+  box-shadow: none !important;
+}
+body.dark-theme #experience .card .role.brown-text.text-darken-2 {
+color: #008080 !important;
+text-shadow: none !important;
+}
+/* projects */
+body.dark-theme #projects .card {
+  background-color: #263238 !important;
+  color: #e0e0e0 !important; 
+  box-shadow: none !important;
+}
+body.dark-theme #projects .card.medium .card-image {
+  background-color: #263238 !important;
+  color: #e0e0e0    !important;
+}
+/* Skills */
+body.dark-theme #skills .card {
+  background-color: #263238 !important;
+  color: #e0e0e0 !important; 
+  box-shadow: none !important;
+}
+body.dark-theme #skills .card-content h4.brown-text.light {
+  color: #008080 !important;
+  text-shadow: none !important;
+}
+/* Experience */
+body.dark-theme #education .card {
+  background-color: #263238 !important;
+  color: #e0e0e0 !important; 
+  box-shadow: none !important;
+}
+
+/* Turn the fixed sidebar into a column flexbox that fills the viewport */
+.side-nav.fixed {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;      /* fill the entire height of the window */
+  padding-top: 0;     /* ensure no extra offset at the top */
+  padding-bottom: 10 !important;
+}
+/* Push only the toggle li down to the very bottom */
+.side-nav.fixed li.sidebar-toggle {
+  margin-top: auto;
 }

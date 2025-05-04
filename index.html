@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Manuel Daziale | Quantitative Product Specialist</title>
 
   <!--TODO-->
@@ -53,6 +55,34 @@
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
   -->
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // select all toggles
+    const toggles = document.querySelectorAll('.theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function setTheme(dark) {
+      document.body.classList.toggle('dark-theme', dark);
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      const icon  = dark ? 'brightness_7' : 'brightness_3';
+      const label = dark ? 'Light Mode' : 'Dark Mode';
+      toggles.forEach(btn => {
+        btn.innerHTML = `<i class="material-icons">${icon}</i><span>${label}</span>`;
+      });
+    }
+
+    // initialize based on saved or system
+    const saved = localStorage.getItem('theme');
+    setTheme(saved ? saved === 'dark' : prefersDark);
+
+    // attach click to each
+    toggles.forEach(btn =>
+      btn.addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-theme'));
+      })
+    );
+  });
+</script>
 
 <body>
   <!--TODO-->
@@ -64,7 +94,7 @@
   -->
   
   <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
+  <!-- Nav class 1: For big screen-->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
 
@@ -110,10 +140,16 @@
            class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
+
+      <li class="bold sidebar-toggle">
+        <a class="theme-toggle waves-effect waves-dark teal-text" id="theme-toggle">
+          <i class="material-icons">brightness_3</i><span>Dark Mode</span>
+        </a>
+      </li>
     </ul>
   </nav>
 
-  <!-- Nav class 2 -->
+  <!-- Nav class 2: For small screen-->
   <nav class="hide-on-large only trigger z-depth-1">
 
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
@@ -125,7 +161,7 @@
     </div>
   </nav>
 
-  <!-- Nav class 3 -->
+  <!-- Nav class 3: For small screen -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
 
@@ -163,6 +199,12 @@
         <a aria-label="Navigate to the Contact section" href="#contact"
            class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold sidebar-toggle">
+        <a class="theme-toggle waves-effect waves-dark teal-text" id="theme-toggle">
+          <i class="material-icons">brightness_3</i><span>Dark Mode</span>
+        </a>
       </li>
     </ul>
   </nav>
@@ -468,14 +510,15 @@
           <!--Work in Progress-->
           <div class="col s12 m6 l4">
             <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Under Construction" src="/assets/img/2_underconstruction.jpg" style="height: 100%; width: 100%"/>
+              <div class="card-image white">
+                <img alt="Under Construction"
+                     src="/assets/img/2_underconstruction.png"
+                     style="height: 100%; width: auto"
+                     class="responsive-img center-block"/>
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Under Construction</span>
-                <p>
-                  This part is under construction
-                </p>
+                <p>This part is under construction</p>
               </div>
             </div>
           </div>
@@ -546,7 +589,7 @@
                 <img alt="" src="/assets/img/3_spark_logo.png" class="responsive-img" />Apache Spark
               </div>
               <div class="col s4 m2" style="margin-bottom: 20px;">
-                <img alt="" src="/assets/img/3_html5_logo.jpg" class="responsive-img" />HTML5
+                <img alt="" src="/assets/img/3_html5_logo.png" class="responsive-img" />HTML5
               </div>
               <div class="col s4 m2" style="margin-bottom: 20px;">
                 <img alt="" src="/assets/img/3_css3_logo.png" class="responsive-img" />CSS3
