@@ -791,3 +791,15 @@ body.dark-theme #education .card {
 .side-nav.fixed li.sidebar-toggle {
   margin-top: auto;
 }
+/* for small screens */
+#slide-out {
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 0; 
+  padding-bottom: 10px;
+}
+
+#slide-out li.sidebar-toggle {
+  margin-top: auto;
+}
