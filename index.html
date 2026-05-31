@@ -83,12 +83,18 @@
     </symbol>
   </svg>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Go to homepage">
-      <span>Manuel Daziale</span>
-      <small class="brand-subtitle-full">Portfolio Risk Manager | Quantitative Finance | Financial Markets</small>
-      <small class="brand-subtitle-short">Portfolio Risk | Quant Finance | Markets</small>
-    </a>
-    <div class="header-actions">
+    <div class="identity-bar">
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <span>Manuel Daziale</span>
+        <small class="brand-subtitle-full">Portfolio Risk Manager | Quantitative Finance | Financial Markets</small>
+        <small class="brand-subtitle-short">Portfolio Risk | Quant Finance | Markets</small>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </div>
+    <div class="nav-bar">
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
@@ -97,10 +103,6 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-        <span class="theme-icon" aria-hidden="true"></span>
-        <span class="theme-label">Dark</span>
-      </button>
     </div>
   </header>
 
@@ -622,7 +624,7 @@
             <h3>Universit&agrave; Cattolica del Sacro Cuore</h3>
             <p>Master's degree, Banking and Finance - Trading and Risk Management</p>
             <span>2015 - 2017</span>
-            <p class="education-detail">Votazione: 106/110</p>
+            <p class="education-detail">Grade: 106/110</p>
             <ul>
               <li>Unicatt Financial Analysts Co-Founder</li>
               <li>Thesis topic: Bitcoin &amp; Blockchain: Analysis of the Structure and Event Study</li>
@@ -650,7 +652,7 @@
             <h3>Universit&agrave; degli Studi di Milano-Bicocca</h3>
             <p>Bachelor's degree, Banking Finance and Insurance</p>
             <span>2011 - 2014</span>
-            <p class="education-detail">Votazione: 110/110 with Honors</p>
+            <p class="education-detail">Grade: 110/110 with Honors</p>
             <ul>
               <li>Thesis topic: THE MINIBOND. Empirical analysis about the issues on the new ExtraMot Pro market.</li>
             </ul>
@@ -686,6 +688,7 @@
       var toggle = document.querySelector(".theme-toggle");
       var label = document.querySelector(".theme-label");
       var backToTop = document.querySelector(".back-to-top");
+      var brandLink = document.querySelector(".brand");
       var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a[href^='#']"));
       var sections = navLinks
         .map(function (link) {
@@ -736,13 +739,37 @@
 
 
         navLinks.forEach(function (link) {
-          link.classList.toggle("is-active", link.getAttribute("href") === "#" + activeSection.id);
+          var isActive = link.getAttribute("href") === "#" + activeSection.id;
+          link.classList.toggle("is-active", isActive);
+          if (isActive && window.innerWidth <= 980) {
+            link.scrollIntoView({ block: "nearest", inline: "center" });
+          }
         });
       }
 
       backToTop.addEventListener("click", function (event) {
         event.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      brandLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          var target = document.querySelector(link.getAttribute("href"));
+          if (!target) {
+            return;
+          }
+
+          event.preventDefault();
+          window.scrollTo({
+            top: target.getBoundingClientRect().top + window.scrollY - document.querySelector(".site-header").offsetHeight + 1,
+            behavior: "smooth"
+          });
+        });
       });
 
       window.addEventListener("scroll", function () {
