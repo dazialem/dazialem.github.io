@@ -450,6 +450,7 @@ h3 {
 .expertise-card,
 .signal-grid article,
 .capability-card,
+.project-card,
 .education-card,
 .under-construction,
 .contact-links a {
@@ -766,6 +767,104 @@ h3 {
   text-transform: uppercase;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 18px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  padding: 30px;
+}
+
+.project-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.45rem;
+}
+
+.project-card p {
+  color: var(--muted);
+}
+
+.project-card ul {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-card li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.project-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.project-status {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 22px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 7px 11px;
+  text-transform: uppercase;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 42px;
+  margin-top: 22px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 10px 14px;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.project-placeholder {
+  background: var(--surface-alt);
+}
+
+.placeholder-mark {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-top: auto;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .education-list {
   display: grid;
   gap: 18px;
@@ -971,6 +1070,7 @@ h3 {
   .expertise-grid,
   .signal-grid,
   .capability-grid,
+  .project-grid,
   .contact-links {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1030,6 +1130,7 @@ h3 {
   .expertise-grid,
   .signal-grid,
   .capability-grid,
+  .project-grid,
   .contact-links {
     grid-template-columns: 1fr;
   }
